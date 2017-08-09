@@ -1,4 +1,4 @@
-## Neighborhood map project
+## Udacity ReactND MyReads project
 ### Getting started
 ##### 1. Open your terminal and clone this repository to a directory you like:
 ```

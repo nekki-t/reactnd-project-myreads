@@ -42,19 +42,19 @@ class Navbar extends Component {
         <Tab
           value={NAV_TAB_INDEX.CURRENT}
           label="Currently Reading"
-          containerElement={<Link to="/current"/>}
+          containerElement={<Link to={URL.CURRENT}/>}
         >
         </Tab>
         <Tab
           value={NAV_TAB_INDEX.WANT}
           label="Want to Read"
-          containerElement={<Link to="/want"/>}
+          containerElement={<Link to={URL.WANT}/>}
         >
         </Tab>
         <Tab
           value={NAV_TAB_INDEX.READ}
           label="Read"
-          containerElement={<Link to="/read"/>}
+          containerElement={<Link to={URL.READ}/>}
         >
         </Tab>
       </Tabs>    );
