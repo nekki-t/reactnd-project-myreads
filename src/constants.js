@@ -1,10 +1,10 @@
 export const URL = {
-  ROOT: '/',
-  CURRENT: '/current',
-  WANT: '/want',
-  READ: '/read',
-  SEARCH: '/search',
-  NOT_FOUND: '/*'
+  ROOT: '/reactnd-project-myreads/',
+  CURRENT: '/reactnd-project-myreads/current',
+  WANT: '/reactnd-project-myreads/want',
+  READ: '/reactnd-project-myreads/read',
+  SEARCH: '/reactnd-project-myreads/search',
+  NOT_FOUND: '/reactnd-project-myreads/*'
 };
 
 export const NAV_TAB_INDEX = {
