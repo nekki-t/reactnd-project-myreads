@@ -1,4 +1,5 @@
 {
+  "homepage": "https://nekki-t.github.io/reactnd-project-myreads",
   "dependencies": {
     "escape-string-regexp": "^1.0.5",
     "form-serialize": "^0.7.2",
