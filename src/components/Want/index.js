@@ -9,6 +9,7 @@ class Want extends Component {
         title={MENU_BOOK_SHELF_INFO.WANT}
         books={this.props.books}
         moveBookTo={this.props.moveBookTo}
+        noRecordImage="images/want.jpeg"
       />
     );
   }

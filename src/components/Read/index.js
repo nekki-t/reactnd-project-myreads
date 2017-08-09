@@ -11,6 +11,7 @@ class Read extends Component {
         title={MENU_BOOK_SHELF_INFO.READ}
         books={this.props.books}
         moveBookTo={this.props.moveBookTo}
+        noRecordImage="images/read.jpeg"
       />
     );
   }

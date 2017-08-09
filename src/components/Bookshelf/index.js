@@ -1,15 +1,9 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
-
-import {MENU_BOOK_SHELF_INFO, API_BOOK_SHELF_INFO} from '../../constants';
-
 import BookGrid from '../BookGrid';
 
 class Bookshelf extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     const localStyles = {
@@ -21,15 +15,31 @@ class Bookshelf extends Component {
         fontFamily: "'Great Vibes', cursive",
         textShadow: '2px 2px 2px #ccc'
       },
+      img: {
+        boxShadow: '2px 2px 3px #ccc'
+      }
     };
 
     return (
       <div style={localStyles.content}>
         <h2 style={localStyles.title}>{this.props.title}</h2>
-        <BookGrid
-          books={this.props.books}
-          moveBookTo={this.props.moveBookTo}
-        />
+        {this.props.books.length > 0 &&
+          <BookGrid
+            books={this.props.books}
+            moveBookTo={this.props.moveBookTo}
+          />
+        }
+        {this.props.books.length === 0 &&
+          <div style={{textAlign: 'center'}}>
+            <h2>No Books in this shelf...</h2>
+            <img
+              src={this.props.noRecordImage}
+              alt={this.props.title}
+              style={localStyles.img}
+            />
+          </div>
+
+        }
       </div>
     );
   }
@@ -39,6 +49,7 @@ Bookshelf.propTypes = {
   styles: PropTypes.object,
   title: PropTypes.string.isRequired,
   books: PropTypes.array,
+  noRecordImage: PropTypes.string,
   moveBookTo: PropTypes.func.isRequired,
 };
 

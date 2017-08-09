@@ -13,6 +13,7 @@ class Current extends Component {
         title={MENU_BOOK_SHELF_INFO.CURRENT}
         books={this.props.books}
         moveBookTo={this.props.moveBookTo}
+        noRecordImage="images/current.jpg"
       />
     );
   }

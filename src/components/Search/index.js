@@ -19,7 +19,9 @@ class Search extends Component {
   }
 
   handleOnChange(event) {
-    if(event.target.value.length < 1) {
+    let query = event.target.value.trim();
+
+    if(query.length < 1) {
       this.setState({
         searchedBooks: [],
       });

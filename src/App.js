@@ -38,6 +38,7 @@ class BooksApp extends React.Component {
       updating: false,
     };
     this.handleMoveBookTo = this.handleMoveBookTo.bind(this);
+
   }
 
   componentDidMount() {
@@ -50,6 +51,7 @@ class BooksApp extends React.Component {
       );
     });
   }
+
 
   handleMoveBookTo(book, shelf) {
     this.setState({
@@ -151,11 +153,11 @@ class BooksApp extends React.Component {
             <div style={styles.contents}>
               <Navbar/>
               <ReactCSSTransitionGroup
-                transitionName="example"
+                transitionName="transition"
                 transitionAppear={true}
                 transitionAppearTimeout={500}
                 transitionEnterTimeout={500}
-                transitionLeaveTimeout={0}
+                transitionLeaveTimeout={500}
                 >
                 <Switch
                   location={location}
